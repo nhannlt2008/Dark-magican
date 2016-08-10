@@ -15,6 +15,19 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
+private slots:
+    void on_pushButton_clicked(bool checked);
+
+    void on_toolButton_clicked();
+
+    void on_toolButton_clicked(bool checked);
+
+    void on_spinBox_valueChanged(int arg1);
+
+    void on_toolButton_2_clicked(bool checked);
+
+    void on_pushButton_3_clicked(bool checked);
+
 private:
     Ui::MainWindow *ui;
 };
