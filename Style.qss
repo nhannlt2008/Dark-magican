@@ -1,0 +1,74 @@
+
+QMainWindow {
+    background-color: #414141;
+
+}
+
+QMenuBar {
+    background-color: #414141;
+}
+
+
+QMenuBar::item {
+    color: #B4B4B4;
+    spacing: 3px; /* spacing between menu bar items */
+    padding: 1px 4px;
+    background: #414141;
+    border-radius: 4px;
+}
+
+QMenuBar::item:selected { /* when selected using mouse or keyboard */
+    background: #787878;
+}
+
+QMenuBar::item:pressed {
+    background: #787878;
+}
+
+QPushButton {
+    color: #B4B4B4;
+    background-color: #787878;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: beige;
+    font: bold 12px;
+    min-width: 5em;
+    padding: 6px;
+}
+
+QToolButton {
+    color: #B4B4B4;
+    background-color: #414141;
+    border-style: outset;
+    border-width: 1px;
+    border-radius: 1px;
+    border-color: #000000;
+    font: bold 12px;
+    padding: 3px;
+}
+
+QRadioButton::indicator {
+    color: #B4B4B4;
+}
+
+QCheckBox::indicator {
+    color: #B4B4B4;
+}
+
+QProgressBar::chunk {
+    background-color: #ff9800;
+    width: 4px;
+    margin: 0.5px;
+}
+QGroupBox {
+    background-color: #414141;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-top: 1ex;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    padding: 0 3px;
+}

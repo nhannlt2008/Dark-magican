@@ -14,7 +14,7 @@
    <string>QT Dark Orange Sheet</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(65, 65, 65);</string>
+   <string notr="true"/>
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QVBoxLayout" name="verticalLayout">
@@ -60,8 +60,7 @@ background-color: rgb(45, 45, 45);</string>
           <item alignment="Qt::AlignHCenter">
            <widget class="QPushButton" name="pushButton">
             <property name="styleSheet">
-             <string notr="true">color: rgb(180, 180, 180);
-background-color: rgb(120, 120, 120);</string>
+             <string notr="true"/>
             </property>
             <property name="text">
              <string>Push Button</string>
@@ -71,7 +70,7 @@ background-color: rgb(120, 120, 120);</string>
           <item alignment="Qt::AlignHCenter">
            <widget class="QToolButton" name="toolButton">
             <property name="styleSheet">
-             <string notr="true">color: rgb(180, 180, 180);</string>
+             <string notr="true"/>
             </property>
             <property name="text">
              <string>Tool Button</string>
@@ -124,6 +123,9 @@ background-color: rgb(120, 120, 120);</string>
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(65, 65, 65);</string>
+            </property>
             <property name="currentIndex">
              <number>0</number>
             </property>
@@ -135,7 +137,7 @@ background-color: rgb(120, 120, 120);</string>
               <item alignment="Qt::AlignLeft">
                <widget class="QPushButton" name="pushButton_2">
                 <property name="styleSheet">
-                 <string notr="true">color: rgb(180, 180, 180);</string>
+                 <string notr="true">background-color: rgb(120, 120, 120);</string>
                 </property>
                 <property name="text">
                  <string>PushButton</string>
@@ -160,8 +162,7 @@ background-color: rgb(120, 120, 120);</string>
           <item alignment="Qt::AlignHCenter">
            <widget class="QPushButton" name="pushButton_3">
             <property name="styleSheet">
-             <string notr="true">color: rgb(180, 180, 180);
-background-color: rgb(120, 120, 120);</string>
+             <string notr="true"/>
             </property>
             <property name="text">
              <string>Push Button</string>
@@ -191,7 +192,7 @@ background-color: rgb(120, 120, 120);</string>
           <item alignment="Qt::AlignHCenter">
            <widget class="QToolButton" name="toolButton_2">
             <property name="styleSheet">
-             <string notr="true">color: rgb(180, 180, 180);</string>
+             <string notr="true"/>
             </property>
             <property name="text">
              <string>Tool Button</string>
@@ -272,7 +273,7 @@ background-color: rgb(120, 120, 120);</string>
           </size>
          </property>
          <property name="styleSheet">
-          <string notr="true">color: rgb(180, 180, 180);</string>
+          <string notr="true"/>
          </property>
          <property name="title">
           <string>GroupBox</string>
@@ -303,10 +304,20 @@ background-color: rgb(0, 0, 0);</string>
              </size>
             </property>
             <property name="styleSheet">
-             <string notr="true">color: rgb(180, 180, 180);</string>
+             <string notr="true">color: rgb(180, 180, 180);
+color: rgb(0, 0, 0);</string>
             </property>
             <property name="value">
-             <number>24</number>
+             <number>35</number>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="textVisible">
+             <bool>true</bool>
+            </property>
+            <property name="invertedAppearance">
+             <bool>false</bool>
             </property>
            </widget>
           </item>
@@ -317,8 +328,10 @@ background-color: rgb(0, 0, 0);</string>
         <widget class="QTableWidget" name="tableWidget">
          <property name="styleSheet">
           <string notr="true">color: rgb(180, 180, 180);
-border-top-color: rgb(0, 0, 0);
 background-color: rgb(120, 120, 120);</string>
+         </property>
+         <property name="gridStyle">
+          <enum>Qt::SolidLine</enum>
          </property>
          <row>
           <property name="text">
@@ -373,6 +386,7 @@ background-color: rgb(120, 120, 120);</string>
     <property name="title">
      <string>File</string>
     </property>
+    <addaction name="actionOpen"/>
    </widget>
    <widget class="QMenu" name="menuEdit">
     <property name="title">
@@ -395,6 +409,23 @@ background-color: rgb(120, 120, 120);</string>
    <addaction name="menuHelp"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionOpen"/>
+  </widget>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>

@@ -6,7 +6,13 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    QFile file (":/Style.qss");
+    file.open(QIODevice::ReadOnly);
+    QString style = file.readAll();
+    setStyleSheet(style);
+
 }
+
 
 MainWindow::~MainWindow()
 {
